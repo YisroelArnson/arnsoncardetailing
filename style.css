@@ -1,0 +1,297 @@
+/* fonts */
+h1, h2 {
+    font-family: komu-a, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h3, h4, h5, p, button {
+    font-family: bio-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    line-height: 2;
+}
+
+/* fonts */
+
+
+/* banner */
+#banner_image {
+    width: 100%;
+    height: 400px;
+    background-image: url("/Assets/images/bmw.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: auto 400px;
+    position: relative;
+}
+
+#banner_image #shader {
+    position:   absolute;
+    width: 100%;
+    height: 400px;
+    background-color: rgba(7, 1, 1, 0.4);
+}
+
+#banner_image h1 {
+    margin: 0;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    position: absolute;
+    color: #fff;
+    font-size: 45px;
+    top: 60%;
+    left: 50%;
+}
+
+#banner_image svg {
+    margin: 0;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    top: 15%;
+    left: 50%;
+}
+
+#banner_image button {
+    margin: 0;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    font-size: 18px;
+    background-color: #d87E4c;
+    border: none;
+    padding: 2px 15px 4px 15px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#banner_image h1 span {
+    color: #d87E4c;
+}
+
+#banner_information {
+    width: 76%;
+    margin: 50px auto;
+}
+
+#banner_information .title_container {
+    display: flex;
+}
+
+#banner_information h2 {
+    font-size: 37px;
+    padding-left: 20px;
+}
+
+#banner_information #social_media_icons {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+}
+/* banner */
+
+
+.divider_background_image {
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 100% auto;
+}
+
+#divider_background_image_1 {
+    background-image: url("/Assets/images/soapy_car.jpg");
+}
+
+#divider_background_image_2 {
+    background-image: url("/Assets/images/blue_interior.jpg");
+}
+
+#divider_background_image_3 {
+    background-image: url("/Assets/images/red_wheels.jpg");
+}
+
+
+
+/* services #1 */
+#services_1, #services_3 {
+    width: 100%;
+    background-color: #0b1217;
+}
+
+.container {
+    padding: 50px 12%;
+}
+
+#services_1 h1, #services_3 h1 {
+    font-size: 50px;
+    color: #fff;
+
+}
+
+#services_1 .title_container {
+    margin-top: 50px;
+}
+
+.container h2 {
+    font-size: 37px;
+    padding-left: 20px;
+}
+
+#services_1 h2 {
+    color: #d87E4c;
+}
+
+#services_1 p, #services_3 p {
+    color: #fff;
+}
+
+#services_1 h3 {
+    color: #fff;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+#services_1 #list_container div {
+    display: flex;
+    align-items: center;
+    margin: 25px 0 25px 30px;
+}
+
+/* services #1 */
+
+/* services #2 */
+#services_2 {
+    width: 76%;
+    margin: 50px auto;
+}
+
+#services_2 h2 {
+    font-size: 37px;
+    padding-left: 20px;
+}
+
+#services_2 .title_container {
+    display: flex;
+}
+
+#interior_tools_list h4 {
+    display: inline-block;
+    padding: 15px 10px;
+    margin: 5px;
+    background-color: #0b1217;
+    color: #fff;
+    font-weight: bold;
+}
+/* services #2 */
+
+
+
+
+
+/* services #3 */
+#services_3 h2 {
+    color: #fff;
+}
+
+#services_3 h3 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+/* services #3 */
+
+/* contact */
+
+#contact {
+    width: 100%;
+}
+
+.title_container {
+    display: flex;
+}
+
+#contact h2 {
+    font-size: 40px;
+    padding-left: 20px;
+}
+
+#contact_info_container {
+    width: 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 100% auto;
+    background-image: url("/Assets/images/map.png");
+}
+
+#grid_container {
+    display: grid;
+    width: 70%;
+    margin: 0px auto;
+    padding-top: 50px;
+    grid-template-columns: 50% 50%;
+    gap: 10px 10px;
+}
+
+.grid_item {
+    padding: 25px 0;
+    background-color: #0b1217;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#grid_item_1 h3 {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+
+#grid_item_1 {
+    grid-column: 1 / span 2;
+}
+
+#grid_item_4 {
+    grid-column: 1 / span 2;
+}
+
+
+
+
+/* 
+.box {
+    background-color: #0b1217;
+}
+
+#box_1 {
+    width: 80%;
+    padding: 35px 0;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#box_1 h3 {
+    font-weight: bold;
+    color: #fff;
+}
+
+#box_container {
+    justify-content: space-around;
+    display: flex;
+}
+
+#box_2, #box_3 {
+    width: 40%;
+} */
+
+
+/* contact */
