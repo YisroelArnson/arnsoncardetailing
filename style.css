@@ -24,8 +24,8 @@ p {
     height: 400px;
     background-image: url("/Assets/images/bmw.jpg");
     background-repeat: no-repeat;
-    background-position: bottom center;
-    background-size: auto 400px;
+    background-position: center center;
+    background-size:cover;
     position: relative;
 }
 
@@ -75,12 +75,12 @@ p {
 }
 
 #banner_information {
-    width: 76%;
-    margin: 50px auto;
+    width: 100%;
 }
 
 #banner_information .title_container {
     display: flex;
+    align-items: center;
 }
 
 #banner_information h2 {
@@ -88,8 +88,20 @@ p {
     padding-left: 20px;
 }
 
+#banner_information button {
+    margin-top: 20px;
+    font-size: 18px;
+    background-color: #d87E4c;
+    border: none;
+    padding: 10px 25px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
 #banner_information #social_media_icons {
-    margin-top: 100px;
+    margin-top: 75px;
     display: flex;
     justify-content: space-around;
 }
@@ -100,8 +112,9 @@ p {
     width: 100%;
     height: 400px;
     background-repeat: no-repeat;
-    background-position: center right;
-    background-size: 100% auto;
+    background-position: center center;
+    background-size:cover;
+    position: relative;
 }
 
 #divider_background_image_1 {
@@ -167,8 +180,8 @@ p {
 
 /* services #2 */
 #services_2 {
-    width: 76%;
-    margin: 50px auto;
+    width: 100%;
+    margin: 50px 0;
 }
 
 #services_2 h2 {
@@ -180,10 +193,15 @@ p {
     display: flex;
 }
 
+#interior_tools_list {
+    margin-top: 30px;
+}
+
 #interior_tools_list h4 {
     display: inline-block;
     padding: 15px 10px;
-    margin: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     background-color: #0b1217;
     color: #fff;
     font-weight: bold;
@@ -225,18 +243,15 @@ p {
 
 #contact_info_container {
     width: 100%;
-    height: 400px;
     background-repeat: no-repeat;
     background-position: center right;
     background-size: 100% auto;
-    background-image: url("/Assets/images/map.png");
+    background-image: url("/Assets/images/large_map.JPG");
 }
 
 #grid_container {
     display: grid;
-    width: 70%;
-    margin: 0px auto;
-    padding-top: 50px;
+    width: 100%;
     grid-template-columns: 50% 50%;
     gap: 10px 10px;
 }
@@ -263,35 +278,123 @@ p {
 #grid_item_4 {
     grid-column: 1 / span 2;
 }
-
-
-
-
-/* 
-.box {
-    background-color: #0b1217;
-}
-
-#box_1 {
-    width: 80%;
-    padding: 35px 0;
-    margin: 10px auto;
-    text-align: center;
-}
-
-#box_1 h3 {
-    font-weight: bold;
-    color: #fff;
-}
-
-#box_container {
-    justify-content: space-around;
-    display: flex;
-}
-
-#box_2, #box_3 {
-    width: 40%;
-} */
-
-
 /* contact */
+
+
+@media only screen and (min-width: 600px) {
+    .container {
+        padding: 50px 15%;
+    }
+
+    #banner_information #social_media_icons {
+        display: block;
+    }
+
+    #banner_information #social_media_icons svg {
+        margin-right: 50px;
+    }
+  }
+
+  
+@media only screen and (min-width: 900px) {
+    .container {
+        padding: 50px 25%;
+    }
+
+    #contact_info_container {
+        width: 100%;
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-size: 100% auto;
+        background-image: url("/Assets/images/large_map.JPG");
+    }
+  }
+
+  @media only screen and (min-width: 1350px) {
+    .container {
+        padding: 100px 15%;
+    }
+
+    .services {
+        min-height: 700px;
+        display: flex;
+        align-items: center;
+    }
+
+    #services_1 .container {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    #banner_image #schedule_button {
+        display: none;
+    }
+
+    #banner_information {
+        width: 40%;
+        display: flex;
+        align-items: center;
+    }
+
+    #banner_information h2 {
+        font-size: 60px;
+    }
+
+    #banner_information #social_media_icons {
+        display: flex;
+        justify-content: left;
+    }
+
+    #banner_information #social_media_icons svg {
+        margin-right: 50px;
+    }
+
+    .section {
+        display: flex;
+    }
+
+    #section_2 {
+        flex-direction: row-reverse;
+    }
+
+    #section_4 {
+        flex-direction: row-reverse;
+    }
+
+    .divider_background_image {
+        height: auto;
+    }
+
+    #banner_image {
+        width: 60%;
+        height: 1000px;
+    }
+    
+    #banner_image #shader {
+        height: 1000px;
+    }
+
+    #banner_image h1 {
+        top: 40%;
+        left: 15%;
+        font-size: 110px;
+        text-align: left;
+        transform: none;
+    }
+
+    #banner_image svg {
+        transform: none;
+        left: 15%;
+        top: 10%;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .container {
+        padding: 100px 25%;
+    }
+
+    #contact .container {
+        padding: 100px 30%;
+    }
+}
